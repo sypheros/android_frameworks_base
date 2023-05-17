@@ -7375,7 +7375,6 @@ void AudioFlinger::SpatializerThread::onFirstRef() {
     if (status != INVALID_OPERATION) {
         updateHalSupportedLatencyModes_l();
     }
-
     const pid_t tid = getTid();
     if (tid == -1) {
         // Unusual: PlaybackThread::onFirstRef() should set the threadLoop running.
